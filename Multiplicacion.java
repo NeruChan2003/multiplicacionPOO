@@ -1,15 +1,32 @@
-// se declara la clase
 public class Multiplicacion {
-    // se declaran las variables
-    int a, b, r;
+    private int a, b, r;
 
-    // se declara el metodo
-    public int multiplicar(int a, int b) {
-        // se llama al objeto
-        r = this.a * this.b;
-
-        return r;
-        // se cierra el metodo dividir
+    public int getA() {
+        return a;
     }
-    // se cierra la clase
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public int getB() {
+        return b;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+    public int getR() {
+        return r;
+    }
+
+    public void multiplicar() {
+        r = a * b;
+    }
+
+    @Override
+    public String toString() {
+        return "Multiplicacion [a=" + a + ", b=" + b + ", r=" + r + "]";
+    }
 }
